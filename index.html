@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satya - Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: rgb(4, 4, 81);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 90px;
+      background-color: rgb(92, 92, 249);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(155, 155, 250);
+      font-size: 1.02rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    main hr {
+      border: 0;
+      background-color: white;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 140px 0;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .leftsection {
+      font-size: 3rem;
+      margin: 40px 0;
+      width: 45%;
+    }
+
+    .rightsection img {
+      width: 400px;
+      max-width: 100%;
+    }
+
+    .purple {
+      color: rgb(145, 64, 221);
+    }
+
+    #element {
+      color: rgb(145, 64, 221);
+    }
+
+    .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      padding: 20px;
+      font-size: 1.2rem;
+    }
+
+    .secondsection ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #202063;
+      color: #ccc;
+      margin-top: 50px;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background-color: #9140dd;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .button-link:hover {
+      background-color: #7d32c6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 768px) {
+      .firstsection {
+        flex-direction: column;
+      }
+
+      .leftsection, .rightsection {
+        width: 90%;
+        text-align: center;
+      }
+
+      .leftsection {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Satya's Portfolio</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="firstsection">
+      <div class="leftsection">
+        Hi, I am <span class="purple">Satya</span>
+        <div>And I am a passionate</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightsection">
+        <img src="phhh.png" alt="Developer illustration">
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="about" class="secondsection">
+      <h1>About Me</h1>
+      <p>
+        Hello! I'm Satya, a developer currently pursuing B.Tech in Computer Science and specialised in Artificial Intelligence and Machine Learning. I love turning ideas into real software, especially in web development and AI.
+      </p>
+      <a href="resume.pdf" class="button-link" download>Download Resume</a>
+      <a href="https://github.com/your-github" class="button-link" target="_blank">Visit GitHub</a>
+    </section>
+
+    <hr>
+
+    <section id="projects" class="secondsection">
+      <h1>Projects</h1>
+      <ul>
+        <li><strong>Netflix Clone:</strong> Built using HTML, CSS, JavaScript, and React.</li>
+        <li><strong>AI Assistant:</strong> Voice-based assistant using Python and OpenAI API.</li>
+        <li><strong>Portfolio Website:</strong> This live portfolio to showcase my work.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="skills" class="secondsection">
+      <h1>Skills</h1>
+      <ul>
+        <li>Languages: Python, Java , Flutter, C </li>
+        <li>Web Development: HTML, JavaScript, React</li>
+        <li>AI/ML: NumPy, Pandas, Scikit-learn, Sympy,Matplotlib</li>
+        <li>Tools: Git, GitHub, VS Code</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="experience" class="secondsection">
+      <h1>Past Experience</h1>
+      <ul>
+        <li>Intern at XYZ Company – Built dashboards using Flask and REST APIs</li>
+        <li>Open Source Contributor – Participated in Hacktoberfest</li>
+        <li>Freelance Web Dev – Created custom sites for clients</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="contact" class="secondsection">
+      <h1>Contact Me</h1>
+      <p>Phone No: <a href="+91" style="color: #99f;">9040XYZDAD</a></p>
+      <p>Email: <a href="dashsatyagmail.com" style="color: #99f;">dashsatyabrat6@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" style="color: #99f;">linkedin.com/in/your-profile</a></p>
+      <p>GitHub: <a href="https://github.com/your-github" style="color: #99f;">github.com/your-github</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Satya | Built with ❤️ using HTML & CSS
+  </footer>
+
+  <!-- Typed.js Script -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['AI Engineer', 'ML Engineer', 'Web Developer'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
